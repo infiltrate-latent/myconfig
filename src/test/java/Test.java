@@ -9,6 +9,7 @@ public class Test {
         //1.将Student的bean注册到Ioc容器
         AnnotationConfigApplicationContext ioc1 = new AnnotationConfigApplicationContext(MyConfig.class);
         //2.获取Ioc的Id
+
         String id = ioc1.getId();
         System.out.println("IOC的id:"+id);
         //3.从IOC容器中获取所有bean的name
